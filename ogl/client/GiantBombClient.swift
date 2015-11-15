@@ -18,6 +18,13 @@ public class GiantBombClient {
     public let API_FORMAT:String = "json"
     public let API_KEY:String = "9f6ca45384beec4b52072c4e7a601ccc6015464f"
     
+    public func getCompanies(name: String) ->Observable<AnyObject!> {
+        let endpoint = "companies"
+        var params = Dictionary<String, String>()
+        params.updateValue("name:\(name)", forKey: "filter")
+        return getURLSessionTask(endpoint, params: params)
+    }
+    
     public func getGames(query: String) -> Observable<AnyObject!> {
         
         let endpoint = "games"

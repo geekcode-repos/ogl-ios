@@ -17,4 +17,13 @@ public class ConsolesManager: NSObject {
         }
         return consoles!
     }
+    
+    public func loadCompanies () {
+        //TODO: Retrieve all companies we want: nintendo, sony, microsoft.
+        let client = GiantBombClient()
+        _ = client.getCompanies("nintendo").subscribeCompleted(
+            ){ json in
+                print(json)
+        }
+    }
 }
