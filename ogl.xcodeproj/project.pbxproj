@@ -15,6 +15,8 @@
 		637EA5081BE584720034AA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637EA5061BE584720034AA6F /* LaunchScreen.storyboard */; };
 		637EA5131BE584720034AA6F /* oglTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EA5121BE584720034AA6F /* oglTests.swift */; };
 		637EA51E1BE584720034AA6F /* oglUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EA51D1BE584720034AA6F /* oglUITests.swift */; };
+		E91218061BF82E3F00861AA4 /* ConsolesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91218051BF82E3F00861AA4 /* ConsolesManager.swift */; };
+		E912180A1BF84A1A00861AA4 /* Consoles.plist in Resources */ = {isa = PBXBuildFile; fileRef = E91218091BF84A1A00861AA4 /* Consoles.plist */; };
 		EDF1F14D0493BD5F8DF6DCD8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7FA4898511B1F63C6939AC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		71DEC135245F642EA22FADCF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AE493C98937EB41437F3E51A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AF7FA4898511B1F63C6939AC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91218051BF82E3F00861AA4 /* ConsolesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsolesManager.swift; path = consoles/ConsolesManager.swift; sourceTree = "<group>"; };
+		E91218091BF84A1A00861AA4 /* Consoles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Consoles.plist; path = consoles/Consoles.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		637EA4FC1BE584720034AA6F /* ogl */ = {
 			isa = PBXGroup;
 			children = (
+				E91218041BF82D9E00861AA4 /* consoles */,
 				633F581E1BE58CA200210104 /* client */,
 				637EA4FD1BE584720034AA6F /* AppDelegate.swift */,
 				637EA4FF1BE584720034AA6F /* ViewController.swift */,
@@ -158,6 +163,15 @@
 				AE493C98937EB41437F3E51A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E91218041BF82D9E00861AA4 /* consoles */ = {
+			isa = PBXGroup;
+			children = (
+				E91218051BF82E3F00861AA4 /* ConsolesManager.swift */,
+				E91218091BF84A1A00861AA4 /* Consoles.plist */,
+			);
+			name = consoles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +283,7 @@
 			files = (
 				637EA5081BE584720034AA6F /* LaunchScreen.storyboard in Resources */,
 				637EA5051BE584720034AA6F /* Assets.xcassets in Resources */,
+				E912180A1BF84A1A00861AA4 /* Consoles.plist in Resources */,
 				637EA5031BE584720034AA6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				637EA5001BE584720034AA6F /* ViewController.swift in Sources */,
+				E91218061BF82E3F00861AA4 /* ConsolesManager.swift in Sources */,
 				637EA4FE1BE584720034AA6F /* AppDelegate.swift in Sources */,
 				633F58201BE58CF600210104 /* GiantBombClient.swift in Sources */,
 			);
